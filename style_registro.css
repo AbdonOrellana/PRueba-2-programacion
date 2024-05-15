@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #577B8D;
+}
+.containerform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+}
+section{
+    position: relative;
+    max-width: 400px;
+    background-color: #577B8D;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    padding: 2rem 3rem;
+    box-shadow: black;
+    width: 100%;
+}
+
+
+.inputbox input{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    top: 20px;
+}
+.input-error{
+    font-size: 15px;
+    margin-bottom: 0;
+    display: none;
+    color: #fff;
+}
+.input-error-activo{
+    display: block;
+}
+.forget{
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
+}
+input:focus~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.forget label{
+    display: flex;
+    align-items: center;
+}
+.forget label input{
+    margin-left: 3px;
+}
+.forget a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+.button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255,1);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4% ease;  
+}
+.button:hover{
+    background-color: rgb(255,255, 255,0.5);
+}
+.register{
+    font-size: .9rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.correcto ion-icon{
+    color: rgb(0, 255, 0);
+
+}
+.incorrecto ion-icon{
+    color: rgb(255, 0, 0);
+}
+
+/* Estilos para la página principal */
+
+/* Fondo de la página */
+
+  
+  /* Estilos para el menú de navegación */
+  .navbar {
+    background-color: #577B8D; /* Color de fondo del menú */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white; /* Color del texto de los enlaces del menú */
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #57A6A1; /* Color del texto de los enlaces del menú al pasar el ratón */
+  }
+  
+  .navbar-light .navbar-brand {
+    color: white; /* Color del texto del logo */
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-color: white; /* Color del icono del menú hamburguesa */
+  }
+  
+  /* Estilos para el carrusel */
+  .carousel-item img {
+    width: 100%;
+    height: 400px; /* Altura del carrusel */
+    object-fit: cover;
+  }
+  
+  /* Estilos para las tarjetas de productos destacados */
+  .card {
+    margin-bottom: 20px;
+    background-color: #57A6A1; /* Color de fondo de las tarjetas */
+  }
+  
+  .card img {
+    height: 200px; /* Altura de las imágenes de productos */
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: white; /* Color del título de la tarjeta */
+  }
+  
+  .card-text {
+    color: white; /* Color del texto de la tarjeta */
+  }
+  
+  .btn-primary {
+    background-color: #57A6A1; /* Color de fondo del botón */
+    border-color: #57A6A1; /* Color del borde del botón */
+  }
+  
+  .btn-primary:hover {
+    color: black;
+    background-color: #577B8D; /* Color de fondo del botón al pasar el ratón */
+    border-color: #577B8D; /* Color del borde del botón al pasar el ratón */
+  }
+  
+  .btn-secondary {
+    background-color: #577B8D; /* Color de fondo del botón secundario */
+    border-color: #577B8D; /* Color del borde del botón secundario */
+    color: white; /* Color del texto del botón secundario */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #57A6A1; /* Color de fondo del botón secundario al pasar el ratón */
+    border-color: #57A6A1; /* Color del borde del botón secundario al pasar el ratón */
+  }
+  /* Agrega efecto de sombra y transición a las tarjetas */
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrega un efecto de transición suave al botón */
+.btn {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}

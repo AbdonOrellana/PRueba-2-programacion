@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastRepair</title>
+    <link rel="icon" href="FastRepair.png" type="img">
+    <link rel="stylesheet" href="style_registro.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="FastRepair.png" alt="Logo de Mi Página" width="150" height="120" class="d-inline-block align-top" loading="lazy">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="main.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Catálogo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Repuestos</a>
+            <a class="dropdown-item" href="#">Accesorios</a>
+            <a class="dropdown-item" href="#">Neumáticos</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline mx-auto my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+      <div class="ml-auto">
+        <a href="InicioSesion.html" class="btn btn-secondary" type="button">Logearse</a>
+      </div>
+    </div>
+  </nav>
+  <div class="containerform">
+    <section class="bg-dark text-light py-4">
+        <form id="registro" method="post" action="InicioSesion.html" >
+            <div class="inputbox" id="V_nombres">
+                <ion-icon id="" name="person"></ion-icon>
+                <input  name="Nombres" type="text" required>
+                <label for="">Nombres</label>
+                <p class="input-error">El nombre solo puede llevar letras</p>
+            </div>
+            <div class="inputbox" id="V_apellidos">
+                <ion-icon  name="person"></ion-icon>
+                <input name="Apellidos" type="text" required>
+                <label for="">Apellidos</label>
+                <p class="input-error">El apellido solo puede llevar letras</p>
+            </div>
+        <div class="inputbox" id="V_email">
+            <ion-icon  name="mail-outline"></ion-icon>
+            <input name="Correo" type="email" required>
+            <label for="">Correo Electronico</label>
+            <p class="input-error">el correo debe ser valido ejemplo: (nombre@gmail.com)</p>
+        </div>
+        <div class="inputbox" id="V_password">
+            <ion-icon  name="lock-closed-outline"></ion-icon>
+            <input id="password" name="password" type="password" required>
+            <label for="">Contraseña</label>
+            <p class="input-error">la contraseña deber tener min 8 caracteres y max 15 caracteres</p>
+        </div>
+        <div class="inputbox" id="V_password-2">
+            <ion-icon  name="lock-closed-outline"></ion-icon>
+            <input id="password2" name="password2" type="password" required>
+            <label for="">Confirmar Contraseña</label>
+            <p class="input-error">Las contraseñas no coinciden</p>
+        </div>
+        <input class="button" type="submit" value="Registrarse" >
+        </form>
+    </section>
+  </div>
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Nuestra Empresa</h5>
+        <ul class="list-unstyled">
+          <li><a href="sobre_nosotros.html" class="text-light">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Usuario</h5>
+        <ul class="list-unstyled">
+          <li><a href="Registro.html" class="text-light">Registrarse</a></li>
+          <li><a href="InicioSesion.html" class="text-light">Iniciar Sesión</a></li>
+          <li><a href="contacto.html" class="text-light">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script_registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

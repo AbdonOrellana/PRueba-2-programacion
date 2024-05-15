@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastRepair</title>
+  <link rel="icon" href="FastRepair.png" type="img">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="FastRepair.png" alt="Logo de Mi Página" width="150" height="120" class="d-inline-block align-top" loading="lazy">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Catálogo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Repuestos</a>
+            <a class="dropdown-item" href="#">Accesorios</a>
+            <a class="dropdown-item" href="#">Neumáticos</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline mx-auto my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+      <div class="ml-auto">
+        <a href="Registro.html" class="btn btn-primary mr-2" type="button">Registrarse</a>
+        <a href="InicioSesion.html" class="btn btn-secondary" type="button">Logearse</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselPrincipal" class="carousel mt-3">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselPrincipal" data-slide-to="1"></li>
+      <li data-target="#carouselPrincipal" data-slide-to="2"></li>
+      <li data-target="#carouselPrincipal" data-slide-to="3"></li>
+      <li data-target="#carouselPrincipal" data-slide-to="4"></li>
+      <li data-target="#carouselPrincipal" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="llanta.png" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+        <img src="Bateriaauto.png" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+        <img src="FiltroAceite.png" class="d-block w-100" alt="Imagen 3">
+      </div>
+      <div class="carousel-item">
+        <img src="amortiguadore.png" class="d-block w-100" alt="Imagen 4">
+      </div>
+      <div class="carousel-item">
+        <img src="PastillasFreno.png" class="d-block w-100" alt="Imagen 5">
+      </div>
+      <div class="carousel-item">
+        <img src="pinoOlor.jpg" class="d-block w-100" alt="Imagen 6">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselPrincipal" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselPrincipal" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  
+  <div class="container mt-4">
+    <h2 class="mb-4">Productos Destacados</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="llanta.png" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Llantas</h5>
+            <p class="card-text">Neumatico 185/65R14 HANKOOK H724 ARO 14</p>
+            <a href="neumatico.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Bateriaauto.png" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Bateria de auto</h5>
+            <p class="card-text">Batería De Auto DGP MF40B19FL 35AH 300CCAz</p>
+            <a href="bateria_auto.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="FiltroAceite.png" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Filtro de aceite</h5>
+            <p class="card-text">Filtro de Aceite DGP W610/82 OEM MD135737</p>
+            <a href="filtro_Aceite.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="amortiguadore.png" class="card-img-top" alt="Producto 4">
+          <div class="card-body">
+            <h5 class="card-title">amortiguador</h5>
+            <p class="card-text">Amortiguador Izquierdo o Derecho DGP DSA42240043</p>
+            <a href="amortiguador.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="PastillasFreno.png" class="card-img-top" alt="Producto 5">
+          <div class="card-body">
+            <h5 class="card-title">Pastillas de frenp</h5>
+            <p class="card-text">Pastillas de Freno Delantera DGP PRO P0490</p>
+            <a href="PastillasFreno.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="pinoOlor.jpg" class="card-img-top" alt="Producto 6">
+          <div class="card-body">
+            <h5 class="card-title">Pinos de olor verdes</h5>
+            <p class="card-text">Pino de  Aroma Black Ice </p>
+            <a href="PinoOlor.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Nuestra Empresa</h5>
+        <ul class="list-unstyled">
+          <li><a href="sobre_nosotros.html" class="text-light">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5>Usuario</h5>
+        <ul class="list-unstyled">
+          <li><a href="Registro.html" class="text-light">Registrarse</a></li>
+          <li><a href="InicioSesion.html" class="text-light">Iniciar Sesión</a></li>
+          <li><a href="contacto.html" class="text-light">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

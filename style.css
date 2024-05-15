@@ -1,0 +1,109 @@
+/*fuente para todo la pagina */
+*{
+  font-family: 'poppins', sans-serif;
+}
+/* Fondo de la página */
+body {
+  
+    background-color: #240750;
+    color: #344C64; 
+  }
+  
+  /* Estilos para el menú de navegación */
+  .navbar {
+    background-color: #577B8D;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white; /
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #57A6A1; /
+  }
+  
+  .navbar-light .navbar-brand {
+    color: white; 
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+  /* Estilos para el carrusel */
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px; 
+  }
+  
+  .carousel-item img {
+    display: block; 
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+  
+  
+  /* Estilos para las tarjetas de productos destacados */
+  .card {
+    margin-bottom: 20px;
+    background-color: #57A6A1; 
+  }
+  
+  .card img {
+    height: 200px; 
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: black; 
+  }
+  
+  .card-text {
+    color: black; 
+  }
+  
+  .btn-primary {
+    background-color: #57A6A1;
+    border-color: #57A6A1;
+  }
+  
+  .btn-primary:hover {
+    color: black;
+    background-color: #577B8D;
+    border-color: #577B8D; 
+  }
+  
+  .btn-secondary {
+    background-color: #577B8D;
+    border-color: #577B8D;
+    color: white; 
+  }
+  
+  .btn-secondary:hover {
+    background-color: #57A6A1; 
+    border-color: #57A6A1; 
+  }
+
+
+  /* Agrega efecto de sombra y transición a las tarjetas */
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrega un efecto de transición suave al botón */
+.btn {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
